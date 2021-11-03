@@ -18,7 +18,6 @@ import Wallete from "./Wallete.svelte";
 	</header>
 	<main>
 		<Route path="/">
-			<h1>Snack accountability for towheed</h1>
 			<p>Given 80rupees to towheed , to increase money management capabillity</p>
 			<p>He have to self manage money.</p>
 			<p> if success 7 day duration -> increase duraiton 1month -> 3month -> 1year</p>
