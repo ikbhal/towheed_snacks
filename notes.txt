@@ -1,0 +1,10 @@
+7 days 
+checkbox no snacks for 7 days 
+start date 
+money given date 
+end date 
+---
+kid name -> received by 
+father name -> given by 
+---
+extend later to 1 month  -> 3months -> 6 months -> 1 year 
