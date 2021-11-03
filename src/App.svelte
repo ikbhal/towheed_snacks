@@ -7,7 +7,7 @@ import Wallete from "./Wallete.svelte";
 </script>
 <Router>
 
-	<head>
+	<header>
 		<h1>Snacks Towheed Accountability</h1>
 
 		<nav>
@@ -15,8 +15,14 @@ import Wallete from "./Wallete.svelte";
 			<Link to="/wallet">Wallet</Link>
 			<Link to="/checklist">Check list</Link>
 		</nav>
-	</head>
+	</header>
 	<main>
+		<Route path="/">
+			<h1>Snack accountability for towheed</h1>
+			<p>Given 80rupees to towheed , to increase money management capabillity</p>
+			<p>He have to self manage money.</p>
+			<p> if success 7 day duration -> increase duraiton 1month -> 3month -> 1year</p>
+		</Route>
 		<Route path="/wallet">
 			<Wallete/>
 		</Route>
