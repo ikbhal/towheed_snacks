@@ -1,16 +1,31 @@
 <script>
+import {Router, Route, Link} from 'svelte-navigator';
 import SnackNoRequestCheck from "./SnackNoRequestCheck.svelte";
 import SnackNoRequestCheckList from "./SnackNoRequestCheckList.svelte";
 import Wallete from "./Wallete.svelte";
 
 </script>
+<Router>
 
-<main>
-	<h1>Snacks Towheed Accountability</h1>
-	<Wallete/>
-<!-- <SnackNoRequestCheck/> -->
-	<SnackNoRequestCheckList/>
-</main>
+	<head>
+		<h1>Snacks Towheed Accountability</h1>
+
+		<nav>
+			<Link to="/">Home</Link>
+			<Link to="/wallet">Wallet</Link>
+			<Link to="/checklist">Check list</Link>
+		</nav>
+	</head>
+	<main>
+		<Route path="/wallet">
+			<Wallete/>
+		</Route>
+		<Route path="/checklist">
+			<SnackNoRequestCheckList/>
+		</Route>
+	</main>
+
+</Router>
 
 <style>
 	main {
